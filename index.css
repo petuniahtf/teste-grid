@@ -1,0 +1,87 @@
+body{
+    margin: 0cm;
+    padding: 0;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+}
+.header{
+    grid-column-start: 1;
+    grid-column: span 3;
+    border: solid 1px black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1;
+    grid-column-gap: 10px;
+}
+.logo{
+    background-color: lightsteelblue;
+    border: solid 1px black;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.menu{
+    background-color: aqua;
+    border: solid 1px black;
+    grid-column-start: 2;
+    grid-column: span 2;
+}
+.p1{
+    grid-row-start: 2;
+    grid-column: span 3;
+    background-color: lightblue;
+    border: solid 1px black;
+}
+.footer{
+    grid-row-start: 7;
+    grid-column: span 3;
+    background-color: lightsalmon;
+    border: solid 1px black;
+}
+.aside{
+    grid-row-start: 3;
+    grid-column-start: 3;
+    grid-row-end: 7;
+    background-color: limegreen;
+    border: solid 2px black;
+}
+.article{
+    grid-row-start: 3;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border: solid 2px black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 5px;
+    
+}
+.child{
+    background-color: rebeccapurple;
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+.child1{
+    background-color: salmon;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    
+}
+.child2{
+    background-color: salmon;
+    grid-row-start: 2;
+    grid-column-start: 1;
+}
+.child3{
+    background-color: rebeccapurple;
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
